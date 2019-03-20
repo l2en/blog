@@ -18,7 +18,7 @@ class Header extends Component {
             <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2" />
           </label>
           <div className='header-left-item'>
-            <a href='javascript:void(0)'>Pull request</a>
+            <a href='javascript:void(0)'>Pull requests</a>
             <a href='javascript:void(0)'>Issues</a>
             <a href='javascript:void(0)'>Marketplace</a>
             <a href='javascript:void(0)'>Explore</a>
