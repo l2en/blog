@@ -7,7 +7,7 @@ class Footer extends Component {
 			<footer className='footer'>
 				<span>
 					<span className='footer-task'><span className='fw-600'>已稳定运行:</span> <em>190 天 23 小时 10分钟 12秒</em></span>
-					<span className='ml-10 fw-600'> |&nbsp;&nbsp;Projects:</span>
+					<span className='ml-10 fw-600'> |&nbsp;&nbsp;Personal Projects:</span>
 					<a href="https://github.com/l2en" title='基于网易云音乐接口开发的在线音乐原生微信小程序' className='footer-link' target='_blank'>netMusic</a>
 					<a href="https://github.com/l2en" title='个人开发记账小程序' className='footer-link' target='_blank'>iWallet</a>
 				</span>
