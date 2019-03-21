@@ -4,7 +4,29 @@ import './index.scss';
 
 class MainContent extends Component {
   state = {
-    projects: [1, 23, 3, 3, 321, 321, 21],
+    projects: [
+      {
+        id: '3213-da1f-0000',
+        name: 'bdyyV3',
+        des: '基于百度地图鹰眼web轨迹管理台V3精简',
+        lag: ['JavaScript', 'MD'],
+        see: '123,91'
+      },
+      {
+        id: '3213-da1f-1111',
+        name: 'blogSourceCode2',
+        des: '原博客源码2',
+        lag: ['HTML', 'React'],
+        see: '12'
+      },
+      {
+        id: '3213-da1f-2222',
+        name: 'componentLib',
+        des: '组件库',
+        lag: ['HTML', 'JavaScript'],
+        see: '1'
+      }
+    ],
     navs: [
       {
         name: 'Overview',
