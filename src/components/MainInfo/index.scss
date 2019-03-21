@@ -1,17 +1,4 @@
-.main{
-	&-container{
-		width: 980px;
-		max-width: 1012px;
-		box-sizing: border-box;
-		position: relative;
-		min-height: 400px;
-		left: 50%;
-		-webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-		transform:translateX(-50%);
-		margin-top: 25px;
-	}
-	&-left{
+.main-left{
 		width: 229px;
 		margin-right: 16px;
 		&-avatarWrapper{
@@ -21,8 +8,8 @@
 			overflow: hidden;
 		}
 		&-avatar{
-            width: 229px;
-            min-height: 229px;
+			width: 229px;
+			min-height: 229px;
 			display: block;
 		}
 		&-emoji{
@@ -66,11 +53,14 @@
 		&-location{
 			color: #24292e;
 			font-size: 14px;
+			text-decoration: none;
+			&:active{
+				color: #24292e;
+			}
 		}
 		& em{
 			margin-right: 5px
 		}
-	}
 }
 .line{
 	border:0;

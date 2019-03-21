@@ -3,5 +3,5 @@ import Main from './Main';
 
 export {
 	Header,
-	Main
+	Main,
 }

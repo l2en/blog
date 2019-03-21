@@ -1,0 +1,92 @@
+.main-right{
+	&-container{
+		width: 75%;
+		padding-left: 8px;
+		box-sizing: border-box;
+	}
+	&-nav{
+		background-color: #fff;
+		border-bottom: 1px solid #d1d5da;
+		color: #586069;
+	}
+	&-item{
+		border-bottom: 2px solid transparent;
+		font-size: 14px;
+		line-height: 1.5;
+		margin-right: 16px;
+		padding: 16px 8px;
+		text-align: center;
+		display: inline-block;
+		cursor: pointer;
+		&-counter{
+			background-color: rgba(27,31,35,.08);
+			border-radius: 20px;
+			color: #586069;
+			display: inline-block;
+			font-size: 12px;
+			font-weight: 600;
+			line-height: 1;
+			padding: 2px 5px;
+			margin-left: 3px
+		}
+	}
+	&-main{
+		width: 100%;
+		min-height: 100px;
+		background-color: #fff;
+		margin-top: 24px;
+		box-sizing: border-box;
+		&-title{
+			font-weight: 400!important;
+			margin-bottom: 8px!important;
+			font-size: 16px;
+		}
+		&-projects{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			list-style: none;
+		}
+		&-overviewProject{
+			width: 359px;
+			padding:16px;
+			box-sizing: border-box;
+			margin-bottom: 16px;
+			border:1px #d1d5da solid;
+			border-radius: 3px;
+			word-break: break-all;
+			&-itemWrapper{
+				line-height: 17px;
+			}
+			&-name{
+				display: inline-block;
+				color: #0366d6;
+				text-decoration: none;
+				font-weight: 600!important;
+				cursor: pointer;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+			&-des{
+				color: #586069!important;
+				font-size: 12px;
+				margin-top: 8px;
+				margin-bottom: 16px
+			}
+			&-tags{
+				color: #586069;
+				margin-right: 5px;
+			}
+		}
+	}
+}
+.navActie{
+	border-bottom-color: #e36209;
+	color: #24292e;
+	font-weight: 600;
+}
+.itemW{
+	display: flex;
+	align-items: center;
+}

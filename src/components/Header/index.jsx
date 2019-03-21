@@ -10,12 +10,12 @@ class Header extends Component {
     return (
       <header className='header'>
         <div className='header-left'>
-          <svg class="icon mr-15" style={style} aria-hidden="true">
+          <svg className="icon mr-15" style={style} aria-hidden="true">
             <use href="#icon-github"></use>
           </svg>
           <label className='header-left-searchWrapper mr-10'>
             <input className='header-left-search' placeholder='Search or jump to...' />
-            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2" />
+            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" className="mr-2" />
           </label>
           <div className='header-left-item'>
             <a href='javascript:void(0)'>Pull requests</a>
@@ -26,21 +26,21 @@ class Header extends Component {
         </div>
         <div className='header-right ml-35'>
           <span className='header-right-item'>
-            <svg class="icon header-right-bell" aria-hidden="true">
+            <svg className="icon header-right-bell" aria-hidden="true">
               <use href="#icon-bell"></use>
             </svg>
           </span>
           <span className='header-right-item'>
-            <svg class="icon header-right-bell" aria-hidden="true">
+            <svg className="icon header-right-bell" aria-hidden="true">
               <use href="#icon-plus"></use>
             </svg>
-            <svg class="icon header-right-bell" aria-hidden="true">
+            <svg className="icon header-right-bell" aria-hidden="true">
               <use href="#icon-arrow"></use>
             </svg>
           </span>
           <span className='header-right-item'>
-            <img class="mr-1 header-right-item-avatar" src="http://t.cn/ExO2mhC" height="20" width="20" />
-            <svg class="icon header-right-bell" aria-hidden="true">
+            <img className="mr-1 header-right-item-avatar" src="http://t.cn/ExO2mhC" height="20" width="20" />
+            <svg className="icon header-right-bell" aria-hidden="true">
               <use href="#icon-arrow"></use>
             </svg>
           </span>

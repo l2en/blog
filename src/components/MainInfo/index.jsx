@@ -8,7 +8,7 @@ class MainInfo extends Component {
 			height: '13px'
 		}
 		return (
-			<div className='main-left'>
+			<div className='main-left fl'>
 				<div className='main-left-avatarWrapper'>
 					<img src="https://dwz.cn/Qv5GlYHh" alt="avatar" className='main-left-avatar' />
 					<div className='main-left-emoji'>
@@ -22,7 +22,7 @@ class MainInfo extends Component {
 				</h1>
 				<div className='line mb-20'></div>
 				<div>
-					<svg class="icon mr-10" style={style} aria-hidden="true">
+					<svg className="icon mr-10" style={style} aria-hidden="true">
 						<use href="#icon-tag"></use>
 					</svg>
 					<em className='tag green'>coder</em>
@@ -30,16 +30,16 @@ class MainInfo extends Component {
 					<em className='tag black'>racer</em>
 				</div>
 				<div className='mt-10'>
-					<svg class="icon mr-10" style={style} aria-hidden="true">
+					<svg className="icon mr-10" style={style} aria-hidden="true">
 						<use href="#icon-location"></use>
 					</svg>
 					<span className='main-left-location'>Chengdu, China</span>
 				</div>
 				<div className='mt-10'>
-					<svg class="icon mr-10" style={style} aria-hidden="true">
+					<svg className="icon mr-10" style={style} aria-hidden="true">
 						<use href="#icon-team"></use>
 					</svg>
-					<span className='main-left-location fw-600'>Qingdao Yunuo Co., Ltd.</span>
+					<a className='main-left-location fw-600' target='_blank' href='http://www.romens.cn/'>Qingdao Yunuo Co., Ltd.</a>
 				</div>
 			</div>
 		)
