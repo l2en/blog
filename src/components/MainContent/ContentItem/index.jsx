@@ -15,15 +15,26 @@ class ContentItem extends Component {
 			width: '14px',
 			height: '13px'
 		}
-		const renderLag = ()=>{
-			return(
-					_.isEmpty(item.lag) ||
-					<div className='fl mr-10'>
-						<svg className="icon mr-6" style={style} aria-hidden="true">
-							<use href="#icon-code"></use>
-						</svg>
-						{item.lag.map((l, index) => <em key={index} className='main-right-main-overviewProject-see'>[{l}]</em>)}
-					</div>
+		const renderLag = (item) => {
+			return (
+				_.isEmpty(item.lag) ||
+				<div className='fl mr-10'>
+					<svg className="icon mr-6" style={style} aria-hidden="true">
+						<use href="#icon-code"></use>
+					</svg>
+					{item.lag.map((l, index) => <em key={index} className='main-right-main-overviewProject-see'>[{l}]</em>)}
+				</div>
+			)
+		}
+		const renderTag = (item) => {
+			return (
+				_.isEmpty(item.tag) ||
+				<div className='mt-5 clearfix'>
+					<svg className="icon mr-6" style={style} aria-hidden="true">
+						<use href="#icon-tag"></use>
+					</svg>
+					{item.tag.map((t, index) => <em key={index} className='main-right-main-overviewProject-tag'>{t}</em>)}
+				</div>
 			)
 		}
 		return (
@@ -41,16 +52,7 @@ class ContentItem extends Component {
 								<em className='main-right-main-overviewProject-see'>{item.see}</em>
 							</div>
 						</div>
-						{
-							_.isEmpty(item.tag) ||
-							<div className='mt-5 clearfix'>
-								<svg className="icon mr-6" style={style} aria-hidden="true">
-									<use href="#icon-tag"></use>
-								</svg>
-								{item.tag.map((t, index) => <em key={index} className='main-right-main-overviewProject-tag'>{t}</em>)}
-							</div>
-						}
-
+						{renderTag(item)}
 					</div>
 				)}
 			</Fragment>
