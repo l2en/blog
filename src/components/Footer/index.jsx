@@ -1,12 +1,31 @@
 import React, { Component } from 'react';
+import Moment from 'moment';
 import './index.scss';
 
 class Footer extends Component {
+	state = {
+		taskTime: '--天--小时--分钟--秒'
+	}
+	componentDidMount(){
+		this.countTakTime();
+	}
+	// 运行时间计算
+	countTakTime = ()=>{
+		const _this = this
+		setInterval(()=>{
+			let startTimeUnix = Moment('2019-3-1 17:10:00').valueOf();
+			let nowUnix = Moment().valueOf();
+			let taskTime = Moment(Moment(nowUnix).diff(startTimeUnix)).format('DD天hh小时mm分钟ss秒')
+			_this.setState({taskTime})
+		},1000)
+	}
 	render() {
+		const {taskTime} = this.state;
+
 		return (
 			<footer className='footer'>
 				<span>
-					<span className='footer-task'><span className='fw-600'>已稳定运行:</span> <em>190 天 23 小时 10分钟 12秒</em></span>
+					<span className='footer-task'><span className='fw-600'>已稳定运行:</span> <em>{taskTime}</em></span>
 					<span className='ml-10 fw-600'> |&nbsp;&nbsp;Personal Projects:</span>
 					<a href="https://github.com/l2en" title='基于网易云音乐接口开发的在线音乐原生微信小程序' className='footer-link' target='_blank'>netMusic</a>
 					<a href="https://github.com/l2en" title='个人开发记账小程序' className='footer-link' target='_blank'>iWallet</a>
