@@ -1,0 +1,34 @@
+.footer{
+	width: 980px;
+	height:115px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #586069;
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform:translateX(-50%);
+	font-size: 12px;
+	&-icon{
+		width: 24px!important;
+		height: 24px!important;
+		&:hover{
+				fill-opacity: .7;
+		}
+	}
+	&-link{
+		color: #0366d6;
+		text-decoration: none;
+		margin-left: 16px;
+		font-weight: 600;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}

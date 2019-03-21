@@ -10,9 +10,11 @@ class Header extends Component {
     return (
       <header className='header'>
         <div className='header-left'>
-          <svg className="icon mr-15" style={style} aria-hidden="true">
-            <use href="#icon-github"></use>
-          </svg>
+          <a href="https://github.com/l2en" target='_blank'>
+            <svg className="icon mr-15" style={style} aria-hidden="true">
+              <use href="#icon-github"></use>
+            </svg>
+          </a>
           <label className='header-left-searchWrapper mr-10'>
             <input className='header-left-search' placeholder='Search or jump to...' />
             <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" className="mr-2" />
@@ -39,7 +41,9 @@ class Header extends Component {
             </svg>
           </span>
           <span className='header-right-item'>
-            <img className="mr-1 header-right-item-avatar" src="http://t.cn/ExO2mhC" height="20" width="20" />
+            <a href="https://github.com/l2en" target='_blank'>
+              <img className="mr-1 header-right-item-avatar" src="http://t.cn/ExO2mhC" height="20" width="20" />
+            </a>
             <svg className="icon header-right-bell" aria-hidden="true">
               <use href="#icon-arrow"></use>
             </svg>

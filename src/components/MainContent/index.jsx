@@ -28,6 +28,54 @@ class MainContent extends Component {
         lag: ['HTML', 'JavaScript'],
         see: '1',
         tag: ['css兼容']
+      },
+      {
+        id: '3213-da1f-333',
+        name: 'componentLib',
+        des: '组件库',
+        lag: ['HTML', 'JavaScript'],
+        see: '1',
+        tag: ['css兼容','地图']
+      },
+      {
+        id: '3213-da1f-4444',
+        name: 'componentLib',
+        des: '组件库',
+        lag: ['HTML', 'JavaScript'],
+        see: '1',
+        tag: ['css3与css']
+      },
+      {
+        id: '3213-da1f-5555',
+        name: 'componentLib',
+        des: '组件库',
+        lag: ['HTML', 'JavaScript'],
+        see: '1',
+        tag: ['组件库']
+      },
+      {
+        id: '3213-da1f-6666',
+        name: 'componentLib',
+        des: '组件库',
+        lag: ['HTML', 'JavaScript'],
+        see: '1',
+        tag: ['web']
+      },
+      {
+        id: '3213-da1f-7777',
+        name: 'componentLib',
+        des: '组件库',
+        lag: ['HTML', 'JavaScript'],
+        see: '1',
+        tag: ['css兼容']
+      },
+      {
+        id: '3213-da1f-8888',
+        name: '测试上传Upload',
+        des: '组件库',
+        lag: ['React'],
+        see: '12',
+        tag: ['上传']
       }
     ],
     navs: [

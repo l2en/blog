@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Header, Main } from '../../components';
-
+import { Header, Main, Footer } from '../../components';
 import './index.scss';
 
 class Home extends Component {
@@ -9,6 +8,7 @@ class Home extends Component {
       <Fragment>
         <Header/>
         <Main/>
+        <Footer/>
       </Fragment>
     )
   }
