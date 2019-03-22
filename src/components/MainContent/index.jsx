@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import ContentItem from './ContentItem';
 import './index.scss';
+import _config from '../../_config'
 
 class MainContent extends Component {
   state = {
@@ -105,7 +106,11 @@ class MainContent extends Component {
       }
     ],
     activeNav: 'Overview'
-  
+  }
+  componentDidMount(){
+    this.setState({
+      projects: _config.articles
+    })
   }
   changeNav=(navname)=>{
     this.setState({activeNav:navname})

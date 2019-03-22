@@ -8,7 +8,6 @@ class ContentItem extends Component {
 	static defaultProps = {
 		projects: []
 	}
-
 	render() {
 		const { projects } = this.props;
 		const style = {
@@ -41,7 +40,9 @@ class ContentItem extends Component {
 			<Fragment>
 				{projects.map(item =>
 					<div className='main-right-main-overviewProject' key={item.id}>
-						<span className='main-right-main-overviewProject-name'>{item.name}</span>
+						<a href={item.path}>
+							<span className='main-right-main-overviewProject-name'>{item.name}</span>
+						</a>
 						<p className='main-right-main-overviewProject-des'>{item.des}</p>
 						<div className='clearfix itemW'>
 							{renderLag(item)}
