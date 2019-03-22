@@ -1,3 +1,4 @@
+const articleBaseUrl = 'https://github.com/l2en/l2en.github.io/blob/master/dataSource/';
 const _config = {
 	articles: [
 		{
@@ -7,7 +8,7 @@ const _config = {
 			lag: [],
 			see: 1,
 			tags: ["js模块化开发规范"],
-			path: '/dataSource/CommonJS_AMD_CMD.md'
+			path: articleBaseUrl+'CommonJS_AMD_CMD.md'
 		}
 	]
 }
