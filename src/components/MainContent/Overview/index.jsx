@@ -21,7 +21,7 @@ class Overview extends Component {
 					<svg className="icon mr-6" style={style} aria-hidden="true">
 						<use href="#icon-code"></use>
 					</svg>
-					{item.lag.map((l, index) => <em key={index} className='main-right-main-overviewProject-see'>[{l}]</em>)}
+					{item.lag.map((l, index) => <em key={index} className='Overview-overviewProject-see'>[{l}]</em>)}
 				</div>
 			)
 		}
@@ -32,28 +32,28 @@ class Overview extends Component {
 					<svg className="icon mr-6" style={style} aria-hidden="true">
 						<use href="#icon-tag"></use>
 					</svg>
-					{item.tag.map((t, index) => <em key={index} className='main-right-main-overviewProject-tag'>{t}</em>)}
+					{item.tag.map((t, index) => <em key={index} className='Overview-overviewProject-tag'>{t}</em>)}
 				</div>
 			)
 		}
 		return (
 			<Fragment>
-				<div className='main-right-main'>
-					<h2 className='main-right-main-title'>Popular repositories </h2>
-					<div className='main-right-main-projects'>
+				<div className='Overview'>
+					<h2 className='Overview-title'>Popular repositories </h2>
+					<div className='Overview-projects'>
 						{projects.map(item =>
-							<div className='main-right-main-overviewProject' key={item.id}>
+							<div className='Overview-overviewProject' key={item.id}>
 								<a href={item.path}>
-									<span className='main-right-main-overviewProject-name'>{item.name}</span>
+									<span className='Overview-overviewProject-name'>{item.name}</span>
 								</a>
-								<p className='main-right-main-overviewProject-des'>{item.des}</p>
+								<p className='Overview-overviewProject-des'>{item.des}</p>
 								<div className='clearfix itemW'>
 									{renderLag(item)}
 									<div className='fl'>
 										<svg className="icon mr-6" style={style} aria-hidden="true">
 											<use href="#icon-eyes"></use>
 										</svg>
-										<em className='main-right-main-overviewProject-see'>{item.see}</em>
+										<em className='Overview-overviewProject-see'>{item.see}</em>
 									</div>
 								</div>
 								{renderTag(item)}

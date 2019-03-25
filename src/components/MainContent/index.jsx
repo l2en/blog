@@ -1,11 +1,13 @@
 import React, { Component, Fragment } from 'react';
 import Overview from './Overview';
 import MainNav from './MainNav';
+import Repositories from './Repositories';
 import './index.scss';
 import _config from '../../_config'
 
 class MainContent extends Component {
   state = {
+    chkedNav: 'Overview',
     projects: [
       {
         id: '3213-da1f-0000',
@@ -86,16 +88,22 @@ class MainContent extends Component {
       projects: _config.articles
     })
   }
-  changeNav = (navname) => {
-    console.log('===>>xuanze', navname)
+  changeNav = (chkedNav) => {
+    this.setState({chkedNav})
   }
   render() {
-    const { projects, navs, activeNav } = this.state;
-
+    const { projects, chkedNav } = this.state;
+    const renderMain = () =>{
+      switch(chkedNav){
+        case 'Overview': return <Overview projects={projects} style={{display: 'none'}}/>;break;
+        case 'Repositories': return <Repositories/>;break;
+        default: return null;
+      }
+    }
     return (
       <div className='main-right-container fl'>
         <MainNav emitChangeNav={(name) => this.changeNav(name)} />
-        <Overview projects={projects} />
+        {renderMain()}
       </div>
     )
   }

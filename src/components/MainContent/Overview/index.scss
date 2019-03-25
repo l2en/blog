@@ -1,10 +1,9 @@
-.main-right{
-	&-main{
-		width: 100%;
-		min-height: 100px;
-		background-color: #fff;
-		margin-top: 24px;
-		box-sizing: border-box;
+.Overview{
+	width: 100%;
+	min-height: 100px;
+	background-color: #fff;
+	margin-top: 24px;
+	box-sizing: border-box;
 	&-title{
 		font-weight: 400!important;
 		margin-bottom: 8px!important;
@@ -60,22 +59,4 @@
 			font-style: normal;
 		}
 	}
-	}
 }
-// &-container{
-// 	width: 75%;
-// 	padding-left: 8px;
-// 	box-sizing: border-box;
-// }
-// &-main{
-// 	width: 100%;
-// 	min-height: 100px;
-// 	background-color: #fff;
-// 	margin-top: 24px;
-// 	box-sizing: border-box;
-// 	&-title{
-// 		font-weight: 400!important;
-// 		margin-bottom: 8px!important;
-// 		font-size: 16px;
-// 	}
-// }
