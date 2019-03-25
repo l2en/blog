@@ -4,7 +4,7 @@ import React, { Component, Fragment } from 'react';
 import _ from 'lodash';
 import './index.scss';
 
-class ContentItem extends Component {
+class Overview extends Component {
 	static defaultProps = {
 		projects: []
 	}
@@ -38,26 +38,30 @@ class ContentItem extends Component {
 		}
 		return (
 			<Fragment>
-				{projects.map(item =>
-					<div className='main-right-main-overviewProject' key={item.id}>
-						<a href={item.path}>
-							<span className='main-right-main-overviewProject-name'>{item.name}</span>
-						</a>
-						<p className='main-right-main-overviewProject-des'>{item.des}</p>
-						<div className='clearfix itemW'>
-							{renderLag(item)}
-							<div className='fl'>
-								<svg className="icon mr-6" style={style} aria-hidden="true">
-									<use href="#icon-eyes"></use>
-								</svg>
-								<em className='main-right-main-overviewProject-see'>{item.see}</em>
+				<div className='main-right-main'>
+					<h2 className='main-right-main-title'>Popular repositories </h2>
+					<div className='main-right-main-projects'>
+						{projects.map(item =>
+							<div className='main-right-main-overviewProject' key={item.id}>
+								<a href={item.path}>
+									<span className='main-right-main-overviewProject-name'>{item.name}</span>
+								</a>
+								<p className='main-right-main-overviewProject-des'>{item.des}</p>
+								<div className='clearfix itemW'>
+									{renderLag(item)}
+									<div className='fl'>
+										<svg className="icon mr-6" style={style} aria-hidden="true">
+											<use href="#icon-eyes"></use>
+										</svg>
+										<em className='main-right-main-overviewProject-see'>{item.see}</em>
+									</div>
+								</div>
+								{renderTag(item)}
 							</div>
-						</div>
-						{renderTag(item)}
-					</div>
-				)}
+						)}
+					</div></div>
 			</Fragment>
 		)
 	}
 }
-export default ContentItem;
+export default Overview;
