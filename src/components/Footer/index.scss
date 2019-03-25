@@ -31,4 +31,10 @@
 			text-decoration: underline;
 		}
 	}
+	&-task{
+		&-time{
+			width: 133px;
+			display: inline-block;
+		}
+	}
 }
