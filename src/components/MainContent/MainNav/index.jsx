@@ -10,7 +10,7 @@ class Nav extends Component {
 				num: 0
 			},
 			{
-				name: 'Repoositories',
+				name: 'Repositories',
 				num: 0
 			},
 			{
