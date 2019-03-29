@@ -10,7 +10,7 @@ class Header extends Component {
     return (
       <header className='header'>
         <div className='header-left'>
-          <a href="https://github.com/l2en" target='_blank'>
+          <a href="https://github.com/l2en" rel="noopener noreferrer" target='_blank'>
             <svg className="icon mr-15" style={style} aria-hidden="true">
               <use href="#icon-github"></use>
             </svg>
@@ -41,7 +41,7 @@ class Header extends Component {
             </svg>
           </span>
           <span className='header-right-item'>
-            <a href="https://github.com/l2en" target='_blank'>
+            <a href="https://github.com/l2en" rel="noopener noreferrer" target='_blank'>
               <img className="mr-1 header-right-item-avatar" src="http://t.cn/ExO2mhC" height="20" width="20" />
             </a>
             <svg className="icon header-right-bell" aria-hidden="true">

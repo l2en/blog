@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Overview from './Overview';
 import MainNav from './MainNav';
 import Repositories from './Repositories';
@@ -95,8 +95,8 @@ class MainContent extends Component {
     const { projects, chkedNav } = this.state;
     const renderMain = () =>{
       switch(chkedNav){
-        case 'Overview': return <Overview projects={projects} style={{display: 'none'}}/>;break;
-        case 'Repositories': return <Repositories/>;break;
+        case 'Overview': return <Overview projects={projects} style={{display: 'none'}}/>;
+        case 'Repositories': return <Repositories/>;
         default: return null;
       }
     }

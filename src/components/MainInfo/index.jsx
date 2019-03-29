@@ -11,9 +11,9 @@ class MainInfo extends Component {
 			<div className='main-left fl'>
 				<div className='main-left-avatarWrapper'>
 					<img src="https://dwz.cn/Qv5GlYHh" alt="avatar" className='main-left-avatar' />
-					<div className='main-left-emoji'>
+					<span className='main-left-emoji'>
 						<g-emoji alias="thought_balloon" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4ad.png">💭</g-emoji>
-					</div>
+					</span>
 					<span className='main-left-signature'>just do IT</span>
 				</div>
 				<h1 className='main-left-name'>
@@ -39,7 +39,7 @@ class MainInfo extends Component {
 					<svg className="icon mr-10" style={style} aria-hidden="true">
 						<use href="#icon-team"></use>
 					</svg>
-					<a className='main-left-location fw-600' target='_blank' href='http://www.romens.cn/'>Qingdao Yunuo Co., Ltd.</a>
+					<a className='main-left-location fw-600' rel="noopener noreferrer" target='_blank' href='http://www.romens.cn/'>Qingdao Yunuo Co., Ltd.</a>
 				</div>
 			</div>
 		)
