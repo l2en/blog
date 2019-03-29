@@ -17,7 +17,7 @@ class Overview extends Component {
 		const renderLag = (item) => {
 			return (
 				_.isEmpty(item.lag) ||
-				<div className='fl mr-10'>
+				<div className='fl mr-10  Overview-lag'>
 					<svg className="icon mr-6" style={style} aria-hidden="true">
 						<use href="#icon-code"></use>
 					</svg>
@@ -27,12 +27,12 @@ class Overview extends Component {
 		}
 		const renderTag = (item) => {
 			return (
-				_.isEmpty(item.tag) ||
+				_.isEmpty(item.tags) ||
 				<div className='mt-5 clearfix'>
 					<svg className="icon mr-6" style={style} aria-hidden="true">
 						<use href="#icon-tag"></use>
 					</svg>
-					{item.tag.map((t, index) => <em key={index} className='Overview-overviewProject-tag'>{t}</em>)}
+					{item.tags.map((t, index) => <em key={index} className='Overview-overviewProject-tag'>{t}</em>)}
 				</div>
 			)
 		}

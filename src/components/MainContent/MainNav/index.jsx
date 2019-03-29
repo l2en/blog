@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import './index.scss';
+import _config from '../../../_config';
 
 class Nav extends Component {
 	state = {
@@ -7,7 +8,7 @@ class Nav extends Component {
 		navs: [
 			{
 				name: 'Overview',
-				num: 0
+				num: _config.articles.length
 			},
 			{
 				name: 'Repositories',

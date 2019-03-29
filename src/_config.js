@@ -5,10 +5,11 @@ const _config = {
 			id: '20193221704',
 			name: "CommonJS/AMD/CMD",
 			des: "关于CommonJS/AMD/CMD三个js模块化开发规范记录",
-			lag: [],
+			lag: ['Javascript'],
 			see: 1,
 			tags: ["js模块化开发规范"],
-			path: articleBaseUrl+'CommonJS_AMD_CMD.md'
+			path: articleBaseUrl+'CommonJS_AMD_CMD.md',
+			isOverview: true
 		}
 	]
 }
