@@ -3,7 +3,7 @@ import Moment from 'moment';
 import { Popover } from 'antd';
 import "antd/dist/antd.css";
 import './index.scss';
-
+const netMusicPic = require('../../static/netMusic.jpg')
 class Footer extends Component {
 	state = {
 		taskTime: '--天--小时--分钟--秒'
@@ -25,7 +25,7 @@ class Footer extends Component {
 		const { taskTime } = this.state;
 		const content = (
 			<div>
-				<img src='http://t.cn/E6jLVkv' style={{width:' 200px',height:'200px'}}/>
+				<img src={netMusicPic} style={{width:' 200px',height:'200px'}}/>
 			</div>
 		);
 		return (

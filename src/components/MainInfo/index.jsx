@@ -2,15 +2,26 @@ import React, { Component } from 'react';
 import './index.scss';
 
 class MainInfo extends Component {
+	state = {
+		avatar: ''
+	}
+	componentDidMount() {
+		let avatar = require('../../static/avatar.png');
+		this.setState({ avatar })
+	}
 	render() {
 		const style = {
 			width: '14px',
 			height: '13px'
 		}
+		const { avatar } = this.state
 		return (
 			<div className='main-left fl'>
 				<div className='main-left-avatarWrapper'>
-					<img src="https://dwz.cn/Qv5GlYHh" alt="avatar" className='main-left-avatar' />
+					<span className='main-left-avatar-wrapper'>
+						<img src={avatar} alt="avatar" className='main-left-avatar' />
+						<span className='main-left-avatar-filter'></span>
+					</span>
 					<span className='main-left-emoji'>
 						<g-emoji alias="thought_balloon" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4ad.png">💭</g-emoji>
 					</span>
