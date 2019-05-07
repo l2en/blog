@@ -20,7 +20,18 @@ const _config = {
 			tags: ["原型", "原型链"],
 			path: articleBaseUrl+'学习笔记1-原型链.md',
 			isOverview: true
+		},
+		{
+			id: '201905072323',
+			name: "React知识点",
+			des: "React知识点 - 要点浅析",
+			lag: ['React'],
+			see: 23,
+			tags: ["React", "知识点", "要点", "笔记"],
+			path: articleBaseUrl+'React要点.md',
+			isOverview: true
 		}
 	]
 }
+
 export default _config;
