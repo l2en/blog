@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './index.scss';
 import MainInfo from '../MainInfo';
 import MainContent from '../MainContent';
-
 class Main extends Component {
 	render() {
 		return (

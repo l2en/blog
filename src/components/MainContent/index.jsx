@@ -3,7 +3,6 @@ import Overview from './Overview';
 import MainNav from './MainNav';
 import Repositories from './Repositories';
 import './index.scss';
-import _config from '../../_config'
 import * as _ from 'lodash';
 
 class MainContent extends Component {
@@ -13,7 +12,7 @@ class MainContent extends Component {
   }
   componentDidMount() {
     this.setState({
-      projects: _config.articles
+      projects: window._config ? window._config.articles : []
     },()=>{
       this.filterOverviewData(this.state.projects)
     })

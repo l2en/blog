@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './index.scss';
-import _config from '../../../_config';
 
 class Nav extends Component {
+	
 	state = {
 		activeNav: 'Overview',
 		navs: [
 			{
 				name: 'Overview',
-				num: _config.articles.length
+				num: window._config?window._config.articles.length:[]
 			},
 			{
 				name: 'Repositories',
@@ -35,6 +35,7 @@ class Nav extends Component {
 	static defaultProps = {
 		emitChangeNav: () => { }
 	}
+	
 	// 切换nav
 	changeNav = (navname) => {
 		this.setState({ activeNav: navname });

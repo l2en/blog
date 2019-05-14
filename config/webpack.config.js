@@ -23,7 +23,7 @@ const getClientEnvironment = require('./env');
 const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
 const ForkTsCheckerWebpackPlugin = require('react-dev-utils/ForkTsCheckerWebpackPlugin');
 const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
-
+const CopyPlugin = require('copy-webpack-plugin'); 
 
 // Source maps are resource heavy and can cause out of memory issue for large source files.
 const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
@@ -306,7 +306,7 @@ module.exports = function (webpackEnv) {
               loader: require.resolve('eslint-loader'),
             },
           ],
-          include: paths.appSrc,
+          include: paths.appSrc
         },
         {
           // "oneOf" will traverse all following loaders until one will
@@ -469,6 +469,9 @@ module.exports = function (webpackEnv) {
       ],
     },
     plugins: [
+      new CopyPlugin([
+        { from: './src/_config.js', to: '_config.js' },
+      ]),
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(
         Object.assign(
