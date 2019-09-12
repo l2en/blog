@@ -3,6 +3,8 @@ import Moment from 'moment';
 import { Popover } from 'antd';
 import "antd/dist/antd.css";
 import './index.scss';
+import {_formatTime} from '../../utils/utils';
+
 const netMusicPic = require('../../static/netMusic.jpg')
 class Footer extends Component {
 	state = {
@@ -15,10 +17,11 @@ class Footer extends Component {
 	countTakTime = () => {
 		const _this = this
 		setInterval(() => {
-			let startTimeUnix = Moment('2019-3-1 17:10:00').valueOf();
-			let nowUnix = Moment().valueOf();
-			let taskTime = Moment(Moment(nowUnix).diff(startTimeUnix)).format('DD天hh小时mm分钟ss秒')
-			_this.setState({ taskTime })
+			// let startTimeUnix = Moment('2019-3-1 17:10:00').valueOf();
+			// let nowUnix = Moment().valueOf();
+			const diffTiem = new Date().getTime() - new Date("2019-3-1 17:10:00").getTime();
+			let taskTime = _formatTime(Moment().unix() - Moment("2019-3-1 17:10:00").unix());
+			_this.setState({ taskTime: `${taskTime.d}天${taskTime.h}小时${taskTime.m}分钟${taskTime.s}秒` })
 		}, 1000)
 	}
 	render() {

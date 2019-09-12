@@ -9,6 +9,7 @@ class Home extends Component {
         <Header/>
         <Main/>
         <Footer/>
+        {/* <img src="https://tool.lu/netcard/" className='home_ip'></img> */}
       </Fragment>
     )
   }
