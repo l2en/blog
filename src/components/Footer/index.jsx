@@ -34,7 +34,7 @@ class Footer extends Component {
 		return (
 			<footer className='footer'>
 				<span>
-					<span><span className='fw-600'>已稳定运行:</span><em className='footer-task-time'>{taskTime}</em></span>
+					<span><span className='fw-600'>稳定运行:</span><em className='footer-task-time'>{taskTime}</em></span>
 					<span className='ml-10 fw-600'>|&nbsp;&nbsp;Personal Projects:</span>
 					<Popover content={content} title="" trigger="hover">
 						<a href="https://github.com/l2en" title='基于网易云音乐接口开发的在线音乐原生微信小程序' className='footer-link' rel="noopener noreferrer" target='_blank'>netMusic</a>
