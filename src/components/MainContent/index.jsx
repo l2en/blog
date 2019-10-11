@@ -12,7 +12,7 @@ class MainContent extends Component {
   }
   componentDidMount() {
     this.setState({
-      projects: window._config ? window._config.articles : []
+      projects: _config.articles || []
     },()=>{
       this.filterOverviewData(this.state.projects)
     })

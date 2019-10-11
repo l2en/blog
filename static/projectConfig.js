@@ -23,4 +23,4 @@ const projectConfig = {
 		}
 	]
 }
-// export default _config;
+export default _config;
