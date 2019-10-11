@@ -469,9 +469,6 @@ module.exports = function (webpackEnv) {
       ],
     },
     plugins: [
-      new CopyPlugin([
-        { from: './src/_config.js', to: '_config.js' },
-      ]),
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(
         Object.assign(

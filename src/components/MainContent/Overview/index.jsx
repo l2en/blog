@@ -39,24 +39,23 @@ class Overview extends Component {
 		return (
 			<Fragment>
 				<div className='Overview'>
-					<h2 className='Overview-title'>Popular repositories </h2>
 					<div className='Overview-projects'>
 						{projects.map(item =>
 							<div className='Overview-overviewProject' key={item.id}>
 								<a href={item.path}>
-									<span className='Overview-overviewProject-name'>{item.name}</span>
+									<span className='Overview-overviewProject-name'>{item.title}</span>
 								</a>
 								<p className='Overview-overviewProject-des'>{item.des}</p>
 								<div className='clearfix itemW'>
 									{renderLag(item)}
-									<div className='fl'>
-										<svg className="icon mr-6" style={style} aria-hidden="true">
-											<use href="#icon-eyes"></use>
-										</svg>
-										<em className='Overview-overviewProject-see'>{item.see}</em>
-									</div>
 								</div>
 								{renderTag(item)}
+								<div className='mt-5'>
+									<svg className="icon mr-6" style={style} aria-hidden="true">
+										<use href="#icon-eyes"></use>
+									</svg>
+									<em className='Overview-overviewProject-see'>{item.see}</em>
+								</div>
 							</div>
 						)}
 					</div></div>

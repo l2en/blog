@@ -8,7 +8,7 @@ class Nav extends Component {
 		navs: [
 			{
 				name: 'Overview',
-				num: _config.articles.length || []
+				num: window.blogSource.articles.length || []
 			},
 			{
 				name: 'Repositories',
